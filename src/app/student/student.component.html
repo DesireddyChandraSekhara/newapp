@@ -1,0 +1,22 @@
+<p>student works!</p>
+
+<h1>hello</h1>
+
+{{title}}
+{{x1}}
+
+<p>{{1+6}}</p>
+
+<p>{{'Sum  is : ' + ( 1+6 + getvalue())}}</p>
+
+<input type="text" #id  placeholder="0000000000">
+<button (click)="fnCall(id.value)">call</button>
+
+<input (click)="abc($event)" value="batch2" >
+
+<input (keyup)="keyupevent($event)" >
+
+<input (input)="zz=$any($event.target).value" placeholder="000">
+
+
+<h1>{{zz}}</h1>

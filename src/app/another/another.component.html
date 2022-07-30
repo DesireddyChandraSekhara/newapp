@@ -1,0 +1,53 @@
+<p>another works!</p>
+
+<ng-template #AA>
+<h1>hi iam inside AA</h1>
+</ng-template>
+
+<!-- <div *ngIf="flag; then BB;else CC">
+
+    <h1>this is not to be shown</h1>
+</div> -->
+
+<li *ngFor="let course of list">
+    {{course}}
+</li>
+
+<li *ngFor="let p of people">
+    {{p.name}} : {{p.age}}
+</li>
+
+<ul *ngFor="let p of people">
+<li *ngIf="p.age>25">
+    {{p.name}} : {{p.age}}
+</li>
+</ul>
+
+<ul [ngSwitch]="logInName">
+    <li *ngSwitchCase="'admin1'">
+       user name is {{logInName}}
+    </li>
+    <li *ngSwitchCase="'user12'">
+        user name is {{logInName}}
+     </li>
+    <li *ngSwitchDefault>
+        <h1>inside switch  default</h1>
+     </li>
+</ul>
+
+<ul *ngFor="let person of people" [ngSwitch]="person.age">
+
+    <li *ngSwitchCase="60"> Age is 60</li>
+    <li *ngSwitchCase="50"> Age is 50</li>
+    <li *ngSwitchCase="30"> Age is 30</li>
+
+</ul>
+
+<li *ngFor="let u of user">
+    {{u.userId}} 
+    {{u.userName}}
+</li>
+
+
+<app-student ></app-student>
+
