@@ -78,6 +78,17 @@ Percent pipe ex1 :  {{.25|percent}} <br>
 Percent pipe ex2 :  {{ .266688885|percent}} <br>
 Percent pipe ex3 :  {{ .266688885|percent:'2.2-3'}} <br>
 
+______________________ Slice pipes <br>
+
+slice ex1:  {{[1,2,4,5,666,7,7]|slice:2:5}} <br>
+slice ex2:  {{[1,2,4,5,666,7,7,8]|slice:3}} <br>
+slice ex3:  {{[1,2,4,5,666,7,7,8]|slice:3:-1}} <br>
+slice ex4:  {{[1,2,4,5,666,7,7,8]|slice:3:-2}} <br>
+slice ex5:  {{[1,2,4,5,666,7,7,8]|slice:-6:-3}} <br>
+
+
+
+
 
 
 
