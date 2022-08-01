@@ -36,6 +36,8 @@ export class AnotherComponent implements OnInit {
   ]
   currenecyValue=4.6789;
   todaydate=new Date();
+
+  jsonValue={"x1":10,"x2":20,"x3":40,"xx":{"y1":10,"y2":30}}
   
   ngOnInit(): void {
   }
