@@ -1,3 +1,4 @@
+import { getLocaleDateFormat } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { Test } from './test';
 @Component({
@@ -33,7 +34,9 @@ export class AnotherComponent implements OnInit {
 
   
   ]
-
+  currenecyValue=4.6789;
+  todaydate=new Date();
+  
   ngOnInit(): void {
   }
 

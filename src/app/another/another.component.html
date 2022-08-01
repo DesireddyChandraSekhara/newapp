@@ -45,11 +45,28 @@
 
 <li *ngFor="let u of user">
     {{u.userId}} 
-    {{u.userName}}
+    {{u.userName |uppercase}}
 </li>
 
 Indian currency example :{{2.34554|currency:'INR'}} <br>
-Canadia currency example :{{2.34554|currency:'CAD'}}
+Canadia currency example :{{currenecyValue|currency:'CAD'}} <br>
+Canadia currency example :{{24.5666|currency:'CAD':'symbol-narrow'}} <br>
+
+US Dollar  example :{{80.12|currency:'USD'}} <br>
+
+********************
+****************** <br>
+{{todaydate}} <br>
+
+Date  pipe Ex1: {{todaydate|date :'short'}} <br>
+
+
+Date  pipe Ex2 : {{todaydate|date :'shortDate'}} <br>
+
+Date  pipe Ex3 : {{todaydate|date :'fullDate'}} <br>
+
+Date  pipe Ex4 : {{todaydate|date :'dd/MM/yyyy'}} <br>
+
 
 
 
