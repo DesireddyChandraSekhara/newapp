@@ -10,8 +10,8 @@ export class Form2Component implements OnInit {
 
   contactForm = new FormGroup(
     {
-     firstname:new FormControl(),
-     lastname:new FormControl(),
+     firstname:new FormControl("se"),
+     lastname:new FormControl("reddy"),
      email:new FormControl(), 
      gender:new FormControl(),
      isMarried:new FormControl(),

@@ -1,8 +1,8 @@
 <p>form2 works!</p>
 
-
+<form [formGroup]="contactForm" (ngSubmit)="onSUbmit()">
 <p>
-    <input type="text" id="fnmae" name="fnmae" forrmControlName="fnmae" placeholder="First Name">
+    <input type="text" id="firstname" name="firstname" forrmControlName="firstname" placeholder="First Name">
 
 </p>
 <p>
@@ -37,3 +37,4 @@
 <p>
  <input type="submit" value="Click here">
 </p>
+</form>
