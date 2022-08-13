@@ -10,6 +10,7 @@ import { ProductComponent } from './product/product.component';
 import { Form2Component } from './form2/form2.component';
 import { FormsModule, ReactiveFormsModule,FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms';
 import { Form3Component } from './form3/form3.component';
+import { Form4Component } from './form4/form4.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { Form3Component } from './form3/form3.component';
     SizeComponent,
     ProductComponent,
     Form2Component,
-    Form3Component
+    Form3Component,
+    Form4Component
   ],
   imports: [
     BrowserModule,
